@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="showcase">
+		<img src="logo.png">
+	</div>
+	<div class="container">
+		<h1 class="label">Login</h1>
+		<form class="login_form" action="imageeditor.html" name="form" onsubmit="return validated()">
+			<div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<div class="btn">
+	<a href="imageeditor.html">
+			<button class="btn btn-lg">Login</button>
+		</a>
+		</div>
+		</form>
+	</div>	
+	<script src="valid.js"></script>
+</body>
+</html>
