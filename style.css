@@ -113,8 +113,7 @@ body {
 .filter button.active {
   color: #fff;
   border-color: red;
-  background: red;
-}
+  background: #bc45f7;}
 
 .filter .slider {
   margin-top: 12px;

@@ -37,12 +37,13 @@ body {
 	height: auto;
 	background: white;
 	border-radius: 40px;
-	border: 2px solid rgb(0, 0, 0, .3);
+	/* border: 2px solid rgb(0, 0, 0, .3); */
 	box-shadow: rgb(66, 147, 66, .5);
 }
 
 .container:hover {
-	box-shadow: 0 0 50px red;
+	transform: scale(1.05);
+	box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 
 .label {
@@ -84,14 +85,13 @@ button {
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
-	background: red;
+	background: #bc45f7;
 	border-radius: 3px;
-	border: 1px solid red;
 	transition: .25s;
 }
 
 .login_form button:hover {
-	background-image: linear-gradient(red, darkred);
+	background-image: linear-gradient(rgb(248, 149, 238), rgb(105, 0, 113));
 }
 
 .login_form #email_error,
