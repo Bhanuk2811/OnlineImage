@@ -1,16 +1,21 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
+  background-color: #e5e5f7;
+  opacity: 0.7;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#a245f755, #a245f7);
   position: relative;
- top: 50px;
-  padding: 10px;  
-  background: url(bg_img.png) no-repeat;
+  top: 50px;
+  padding: 10px;
+
   background-size: cover;
   align-items: center;
   justify-content: center;
@@ -18,62 +23,75 @@ body{
   font-family: sans-serif;
   animation: gradient 8s ease infinite;
   background-size: 100% 200%;
- 
-   
+
+
 }
+
 @keyframes gradient {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 0%;
   }
-.container{
+
+  50% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.container {
   width: 850px;
   padding: 30px 35px 35px;
   background: #fff;
   border-radius: 10px;
 
-  
+
 }
-.container:hover{
+
+.container:hover {
   box-shadow: 0 0px 40px red;
   transition: .25s;
 }
+
 .container.disable .editor-panel,
 .container.disable .controls .reset-filter,
-.container.disable .controls .save-img{
+.container.disable .controls .save-img {
   opacity: 0.5;
   pointer-events: none;
 }
-.container h2{
+
+.container h2 {
   margin-top: -8px;
   font-size: 22px;
   font-weight: 500;
 }
-.container .wrapper{
+
+.container .wrapper {
   display: flex;
   margin: 20px 0;
   min-height: 335px;
 }
-.wrapper .editor-panel{
+
+.wrapper .editor-panel {
   padding: 15px 20px;
   width: 280px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-.editor-panel .title{
+
+.editor-panel .title {
   display: block;
   font-size: 16px;
   margin-bottom: 12px;
 }
-.editor-panel .options, .controls{
+
+.editor-panel .options,
+.controls {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.editor-panel button{
+
+.editor-panel button {
   outline: none;
   height: 40px;
   font-size: 14px;
@@ -83,50 +101,61 @@ body{
   margin-bottom: 8px;
   border: 1px solid #aaa;
 }
-.editor-panel .filter button{
+
+.editor-panel .filter button {
   width: calc(100% / 2 - 4px);
 }
-.editor-panel button:hover{
+
+.editor-panel button:hover {
   background: #f5f5f5;
 }
-.filter button.active{
+
+.filter button.active {
   color: #fff;
   border-color: red;
   background: red;
 }
-.filter .slider{
+
+.filter .slider {
   margin-top: 12px;
 }
-.filter .slider .filter-info{
+
+.filter .slider .filter-info {
   display: flex;
   color: #464646;
   font-size: 14px;
   justify-content: space-between;
 }
-.filter .slider input{
+
+.filter .slider input {
   width: 100%;
   height: 5px;
   accent-color: red;
 }
-.editor-panel .rotate{
+
+.editor-panel .rotate {
   margin-top: 17px;
 }
-.editor-panel .rotate button{
+
+.editor-panel .rotate button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: calc(100% / 4 - 3px);
 }
+
 .rotate .options button:nth-child(3),
-.rotate .options button:nth-child(4){
+.rotate .options button:nth-child(4) {
   font-size: 18px;
 }
-.rotate .options button:active{
+
+.rotate .options button:active {
   color: #fff;
   background: red;
   border-color: red;
 }
-.wrapper .preview-img{
+
+.wrapper .preview-img {
   flex-grow: 1;
   display: flex;
   overflow: hidden;
@@ -135,14 +164,16 @@ body{
   align-items: center;
   justify-content: center;
 }
-.preview-img img{
+
+.preview-img img {
   max-width: 490px;
   max-height: 335px;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.controls button{
+
+.controls button {
   padding: 11px 20px;
   font-size: 14px;
   border-radius: 3px;
@@ -153,49 +184,58 @@ body{
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
-.controls .reset-filter{
+
+.controls .reset-filter {
   color: #6C757D;
   border: 1px solid #6C757D;
 }
-.controls .reset-filter:hover{
+
+.controls .reset-filter:hover {
   color: #fff;
   background: #6C757D;
 }
-.controls .choose-img{
+
+.controls .choose-img {
   background: #6C757D;
   border: 1px solid #6C757D;
 }
-.controls .save-img{
+
+.controls .save-img {
   margin-left: 5px;
   background: red;
   border: 1px solid red;
 }
 
 @media screen and (max-width: 760px) {
-  .container{
+  .container {
     padding: 25px;
   }
-  .container .wrapper{
+
+  .container .wrapper {
     flex-wrap: wrap-reverse;
   }
-  .wrapper .editor-panel{
+
+  .wrapper .editor-panel {
     width: 100%;
   }
-  .wrapper .preview-img{
+
+  .wrapper .preview-img {
     width: 100%;
     margin: 0 0 15px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .controls button{
+  .controls button {
     width: 100%;
     margin-bottom: 10px;
   }
-  .controls .row{
+
+  .controls .row {
     width: 100%;
   }
-  .controls .row .save-img{
+
+  .controls .row .save-img {
     margin-left: 0px;
   }
 }
