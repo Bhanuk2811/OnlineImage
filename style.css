@@ -10,7 +10,7 @@
 
 body {
   background-color: #e5e5f7;
-  opacity: 0.7;
+  opacity: 0.9;
   background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 10px), repeating-linear-gradient(#a245f755, #a245f7);
   position: relative;
   top: 50px;
@@ -48,7 +48,7 @@ body {
 }
 
 .container:hover {
-  box-shadow: 0 0px 40px red;
+  box-shadow: 0 0px 40px rgb(48, 0, 70);
   transition: .25s;
 }
 
@@ -95,7 +95,7 @@ body {
   outline: none;
   height: 40px;
   font-size: 14px;
-  color: red;
+  color: bc45f7;
   background: #fff;
   border-radius: 3px;
   margin-bottom: 8px;
@@ -112,7 +112,6 @@ body {
 
 .filter button.active {
   color: #fff;
-  border-color: red;
   background: #bc45f7;}
 
 .filter .slider {
@@ -129,7 +128,7 @@ body {
 .filter .slider input {
   width: 100%;
   height: 5px;
-  accent-color: red;
+  accent-color: #bc45f7;;
 }
 
 .editor-panel .rotate {
@@ -150,8 +149,8 @@ body {
 
 .rotate .options button:active {
   color: #fff;
-  background: red;
-  border-color: red;
+  background: bc45f7;
+  border-color: bc45f7;
 }
 
 .wrapper .preview-img {
@@ -201,8 +200,8 @@ body {
 
 .controls .save-img {
   margin-left: 5px;
-  background: red;
-  border: 1px solid red;
+  background: #bc45f7;
+  border: 1px solid #bc45f7;
 }
 
 @media screen and (max-width: 760px) {
